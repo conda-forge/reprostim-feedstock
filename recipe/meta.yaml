@@ -1,5 +1,5 @@
 {% set name = "reprostim" %}
-{% set version = "0.7.17" %}
+{% set version = "0.7.18" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/reprostim-{{ version }}.tar.gz
-  sha256: 3b45bccd6ed26545a35b07980f4626309dac61fc9f18738efdacefea40733eb9
+  sha256: 878c560e52b48cb23fd37f99c23dbe8b34844ab33c455dab348aeed6c9171a13
 
 build:
   noarch: python
