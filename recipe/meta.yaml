@@ -1,5 +1,5 @@
 {% set name = "reprostim" %}
-{% set version = "0.7.25" %}
+{% set version = "0.7.27" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/reprostim-{{ version }}.tar.gz
-  sha256: b18c08c4da897b8201a815805aacc45287086995deec07d7c218b0a87fb4af65
+  sha256: d54ba66ce15bc61bdab9309f438085c81133a27c7532195ed1fc75e1ad540b4b
 
 build:
   noarch: python
@@ -32,6 +32,8 @@ requirements:
     - qrcode >=8.0
     - opencv >=4.9.0
     - pyzbar =0.1.8
+    - filelock >=3.16.0
+    - isodate >=0.7.2
 
 test:
   imports:
@@ -44,6 +46,7 @@ test:
     - pytest-cov
     - reedsolo >=1.7.0
     - scipy
+    - pytest-mock
   source_files:
     - tests
 
