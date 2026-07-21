@@ -1,5 +1,5 @@
 {% set name = "reprostim" %}
-{% set version = "0.7.33" %}
+{% set version = "0.7.34" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/reprostim-{{ version }}.tar.gz
-  sha256: 93afeb76730fc0d6a5b0446a957dfddc1a47cfa6375d5f6ab1432bc13c70d7fb
+  sha256: e75d5265bcaa58c31d16f1c576a5d69b45cc62c97d8b8a9ced07983d9981e272
 
 build:
   noarch: python
@@ -35,6 +35,8 @@ requirements:
     - filelock >=3.16.0
     - isodate >=0.7.2
     - pyyaml >=6.0
+    - jsonlines >=4.0.0
+    - pandas >=2.2.2
 
 test:
   imports:
