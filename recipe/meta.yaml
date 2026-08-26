@@ -50,6 +50,7 @@ test:
     - reedsolo >=1.7.0
     - scipy
     - pytest-mock
+    - psutil >=5.9.0
   source_files:
     - tests
 
