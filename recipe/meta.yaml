@@ -37,6 +37,8 @@ requirements:
     - pyyaml >=6.0
     - jsonlines >=4.0.0
     - pandas >=2.2.2
+    - linkml >=1.9.0
+    - requests >=2.34.2
 
 test:
   imports:
